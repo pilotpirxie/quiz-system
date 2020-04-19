@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="quiz-append-container"></div>
+
+<!--<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>-->
+<!--<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>-->
+<script src="lib/quiz-system.min.js"></script>
+<script defer>
+  window.onload = () => {
+    setTimeout(() => {
+      window.Quiz.render({
+        appendId: 'quiz-append-container',
+        questions: [{
+          type: 'choice',
+          title: 'Jaki jest najwyższy wodospad na świecie?',
+          answers: [
+            'Niagara Falls',
+            'Angel Falls',
+            'Sutherland Falls',
+            'Yosemite Falls',
+          ],
+          correctAnswer: 1,
+          hint: 'Zobacz wiki aby poznać więcej',
+        }, {
+          type: 'choice',
+          title: 'Czy można zamienić PSC za SMS?',
+          answers: [
+            'Tak',
+            'Nie',
+          ],
+          correctAnswer: 0,
+          hint: 'Można zamienić, są do tego stronki',
+        }, {
+          type: 'response',
+          title: 'Który mamy aktualnie rok?',
+          correctAnswer: '2020',
+          hint: 'Zobacz wiki aby poznać więcej',
+        }]
+      });
+    }, 100);
+  }
+</script>
+</body>
+</html>

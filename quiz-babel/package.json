@@ -1,0 +1,19 @@
+{
+  "name": "quiz-babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "uglify-js": "^3.9.1"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-preset-minify": "^0.5.1"
+  },
+  "scripts": {
+    "build": "npx babel src/react.production.min.js src/react-dom.production.min.js src/quiz-system.js --out-file lib/quiz-system.min.js"
+  }
+}

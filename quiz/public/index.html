@@ -40,6 +40,40 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-
+    <script defer>
+      window.onload = () => {
+        setTimeout(() => {
+          window.Quiz.render({
+            appendId: 'quiz-append-container',
+            questions: [{
+              type: 'choice',
+              title: 'Jaki jest najwyższy wodospad na świecie?',
+              answers: [
+                'Niagara Falls',
+                'Angel Falls',
+                'Sutherland Falls',
+                'Yosemite Falls',
+              ],
+              correctAnswer: 1,
+              hint: 'Zobacz wiki aby poznać więcej',
+            }, {
+              type: 'choice',
+              title: 'Czy można zamienić PSC za SMS?',
+              answers: [
+                'Tak',
+                'Nie',
+              ],
+              correctAnswer: 0,
+              hint: 'Można zamienić, są do tego stronki',
+            }, {
+              type: 'response',
+              title: 'Który mamy aktualnie rok?',
+              correctAnswer: '2020',
+              hint: 'Zobacz wiki aby poznać więcej',
+            }]
+          });
+        }, 100);
+      }
+    </script>
   </body>
 </html>
