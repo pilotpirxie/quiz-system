@@ -1,5 +1,5 @@
 # quiz-system
-Simple quiz widget for websites build with React. Could be append as part of existing website or run as external application. Supports two types of question:
+Simple quiz widget for websites build with the React. Could be append as a part of existing website or run as an external application. Supports two types of the question:
 * ``choice`` from multiple option,
 * check if user ``response`` is correct. 
 
