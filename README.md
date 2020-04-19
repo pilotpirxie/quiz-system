@@ -33,18 +33,18 @@ yarn yarn
 ### Sample configuration
 ```js
 window.Quiz.render({
-  appendId: 'quiz',
-  questions: [{
-    type: 'choice',
-    title: 'Question #1?',
-    answers: [
+  appendId: 'quiz', // id of DOM element to render react app
+  questions: [{ // array with questions
+    type: 'choice', // type of question, one of: choice, response
+    title: 'Question #1?', // question title
+    answers: [ // array with answers, only for choice type of question
       'Answer #1',
       'Answer #2',
       'Answer #3',
       'Answer #4',
     ],
-    correctAnswer: 1,
-    hint: 'Here hint',
+    correctAnswer: 1, // index of correct answer for choice type of question, otherwise valid answer, case insensitive  
+    hint: 'Here hint', // hint to display when user click on the left button
   }, {
     type: 'choice',
     title: 'Question #2?',
