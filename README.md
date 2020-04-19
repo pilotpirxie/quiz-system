@@ -24,7 +24,7 @@ yarn build
 # or with babel, copy index.js to quiz-babel/src/quiz-system.js without imports, 
 # install dependencies like with cra and then call
 yarn yarn
-``
+```
 
 ### How to use on website?
 * Append script on the end of the body
